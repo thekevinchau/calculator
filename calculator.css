@@ -10,7 +10,7 @@
     flex-direction: column;
     border-radius: 14px;
     background-color: rgb(64, 109, 152);
-    height: 350px;
+    height: 375px;
     width: 250px;
 }
 .display-container{
@@ -33,23 +33,33 @@
     border-radius: 14px;
     font-weight: bold;
 }
-.bottom-section{
-    margin-left: 20px;
-    flex-direction: column;
+#result{
     display: flex;
-    width: 250px;
+    justify-content: flex-end;
 }
-.button{
-    margin-bottom: 5px;
-    width: 50px;
-    height: 40px;
-    background-color:rgb(20, 71, 119);
-    border: none;
-    border-radius: 50px;
-    color: white;
+#operations{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 400;
     font-size: 15px;
-    font-weight: bold;
 }
-#clear{
-    width: 105px;
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    width: 85%;
+    margin-left: 20px;
+}
+.btn {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.span{
+    grid-column: span 2;
 }
