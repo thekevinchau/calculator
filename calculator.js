@@ -107,3 +107,13 @@ function calculation(){
 function roundNumber(number){
     return Math.round(number * 1000) / 1000;
 }
+
+decimalButton.addEventListener('click', () => {
+    addDecimal();
+})
+
+function addDecimal(){
+    if (!currentValue.includes(".")){
+        currentValue += "."
+    }
+}
